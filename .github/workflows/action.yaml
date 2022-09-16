@@ -8,3 +8,4 @@ jobs:
       uses: action/checkout@v2
     - name: docker build
       run: docker build -t rgazizulin/skygramm_app:$GITHUB_REF_NAME-$GITHUB_RUN_ID .
+    - name: docker push rgazizulin/skygramm_app:$GITHUB_REF_NAME-$GITHUB_RUN_ID
