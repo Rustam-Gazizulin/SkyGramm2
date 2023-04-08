@@ -2,6 +2,6 @@ version: "3.9"
 
 services:
   api:
-    image: rgazizulin/skygramm_app:$GITHUB_REF_NAME-$GITHUB_RUN_ID
+    image: rgazizulin/skygramm:$GITHUB_REF_NAME-$GITHUB_RUN_ID
     ports:
       - 80:80

@@ -4,6 +4,7 @@ services:
   api:
     build:
       context: .
-    image: rgazizulin/skygramm_app
+      dockerfile: Dockerfile
+    restart: always
     ports:
-      - 80:80
+      - "80:80"
